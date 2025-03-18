@@ -1,1 +1,5 @@
-My answers to the coding challenge for Watchmaker Genomics
+# My answers to the coding challenge for Watchmaker Genomics
+### Explanation for part 1: GC content
+For this task, I read in a mock FASTA file and parsed the sequence headers and corresponding DNA sequences. To calculate GC content, I counted the number of 'G' and 'C' bases in each sequence, divided by the total sequence length, and multiplied by 100 to get the percentage. I stored each result in a dictionary using the FASTA header as the key and the GC percentage as the value. After processing all sequences, I printed the label with the highest GC content along with its corresponding percentage, formatted to six decimal places.
+### Explanation for part 2: Sex-Linked Inheritance
+For part two, I used the Hardy-Weinberg equilibrium equation to determine the odds of a randomly selected female as a X-linked trait carrier. Using an array containing the proportion of males that express the recessive trait (corresponding to allele frequency, q, since males only have one X chromasome) I computed 2 * q * (1 - q) for each allele. I rounded to two decimals and returned an array containing the probabilities. 
